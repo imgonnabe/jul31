@@ -40,12 +40,16 @@ import java.awt.Frame;
  * 프레임.setVisiable(boolean a);
  */
 public class GUI01 {
-	public static void main(String[] args) {
-		Frame frame = new Frame("프레임입니다.");
-		Button btn = new Button("클릭");
-		
+	Frame frame = new Frame("프레임입니다.");
+	Button btn = new Button("클릭");
+	
+	public GUI01() {
 		frame.add(btn);
 		frame.setSize(300, 600);
 		frame.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new GUI01();
 	}
 }
